@@ -23,8 +23,9 @@ public class Pangram {
 			map.put(String.valueOf(ch), counter++);
 		}
 		
-		String sentence = input.nextLine();
+		String sentence = input.nextLine().toLowerCase();
 		System.out.println(sentence  + " is a Pangram :  " +  checkPangram(sentence,map));
+		input.close();
 	}
 
 	public static boolean checkPangram(String sentence, Map<String, Integer> map) {
@@ -42,16 +43,10 @@ public class Pangram {
 				isPangram = true;
 			}	
 		}	
-		return isPangram;
-		
+		return isPangram;		
 	}
 			
-			
-	
-			
-			
-			
-		}
+}
 
 	
 
