@@ -16,16 +16,16 @@ public class SummingNthTerm {
 		long n; // Evaluate the integer 
 		long sum = 0; //Holding the sum 
 		
-		
-		
+
 		for(int i = 0; i < T; i++) {
 			//System.out.println("Testing the Test Cases");
 			n = input.nextLong();
 			//sum += (n*n) % mod;
-			sum += ((n%mod)*(n%mod))%mod;
+			sum = (n * n) % mod;
+			System.out.println(sum);
 		}
 		
-		System.out.println(sum);
+		
 		
 		
 		

@@ -5,6 +5,13 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Pangram {
+	
+	/*
+	 * Program will evaluate a sentence to see if it's Pangram. 
+	 * A sentence that uses every letter of the alphabet. 
+	 * 
+	 * @HeavyTech 2018
+	 */
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
