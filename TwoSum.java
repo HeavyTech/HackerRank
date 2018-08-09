@@ -15,11 +15,9 @@ public class TwoSum {
 	public static void main(String[] args) {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		int randomArray [] = setRandomArray();
-		print(randomArray);
+
 		ArrayList<Integer> result = twoSum(randomArray,3,arr);
-		for(Integer x : result) {
-			System.out.println("Index " + x);
-		}
+		print(result);
 		
 	}
 
@@ -45,7 +43,7 @@ public class TwoSum {
 		return arr;
 	}
 
-	public static void print(int arr []) {
+	public static void print(ArrayList<Integer> arr) {
 		for(Integer x : arr) {
 			System.out.print(x + " ");
 		}
