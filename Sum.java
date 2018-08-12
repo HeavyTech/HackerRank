@@ -35,7 +35,6 @@ public class Sum {
 		return sum;
 	}
 	public static int recursiveSum(int [] arr, int n) {
-		int sum = 0;
 		if(n < 0) {
 			return arr[n];
 		}
