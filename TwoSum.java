@@ -15,12 +15,9 @@ public class TwoSum {
 	public static void main(String[] args) {
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		int randomArray [] = setRandomArray();
-
 		ArrayList<Integer> result = twoSum(randomArray,3,arr);
-		print(result);
-		
+		print(result);	
 	}
-
 	public static ArrayList<Integer> twoSum(int[] nums, int target, ArrayList<Integer> arr) {
 		for(int i = 0; i < nums.length-1; i ++) {
 			for(int j = 1 ; j < nums.length-1; j++) {

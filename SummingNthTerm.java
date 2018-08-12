@@ -25,12 +25,7 @@ public class SummingNthTerm {
 			System.out.println(sum);
 		}
 		
-		
-		
-		
-		
-		
-		
+		input.close();
 	}
 
 }
