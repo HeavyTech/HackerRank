@@ -16,7 +16,6 @@ public class Sum {
 		System.out.println("Using a while loop sum : " + whileLoopSum(array));
 		System.out.println("Using a Recursive loop sum : " + recursiveSum(array,array.length-1));
 		
-
 	}
 	
 	public static int forLoopSum(int [] arr) {
