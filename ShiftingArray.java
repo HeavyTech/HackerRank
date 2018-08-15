@@ -8,27 +8,38 @@ public class ShiftingArray {
 
 	public static void main(String[] args) {
 		
-		int [] arr = {1,2,3,4};
-		shiftArray(arr,2);
+		int [] arr = {1,2,3,4,7};
 		print(arr);
-		
+		shiftArrayLeft(arr,3);
 	}
 	
-	public static void shiftArray(int [] arr ,int n) {
+	public static void shiftArrayRight(int [] arr ,int n) {
 		int temp;
 		for(int i = 0; i < n; i ++) {
-			for(int j = arr.length -1; j > 0;j--) {
+			for(int j = arr.length-1; j > 0;j--) {
 				temp = arr[j];
 				arr[j] = arr[j-1];
 				arr[j-1] = temp;
 			}
 		}
-}			
+}
+	public static void shiftArrayLeft(int [] arr , int n) {
+		int temp; 
+		for(int i = 0; i < n;i ++) {
+			for(int j = 0; j < n;j++) {
+				temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1]= temp;
+			}
+		}
+		
+	}
 	public static void print(int [] arr) {
 		for(Integer x : arr) {
-			System.out.println(x + " ");
+			System.out.print(x + " ");
 		}
 	}
+
 }
 
 
