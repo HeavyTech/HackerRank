@@ -10,6 +10,7 @@ public class MedianSortedArray {
 	   nums2 = [3, 4]
 
        The median is (2 + 3)/2 = 2.5
+       @Author HeavyTech 2018
 	 */
 	
 	public static void main(String[] args) {
@@ -17,32 +18,34 @@ public class MedianSortedArray {
 		int [] nums2 = {3,4};
 		
 		int [] mergedArray = mergeArray(nums1,nums2);
-		
-		print(mergedArray);
-		System.out.println();
 		Arrays.sort(mergedArray);
 		print(mergedArray);
-		System.out.println();
-		
-		System.out.println(findMedianSortedArrays(mergedArray));
-		
-		
-		
+		System.out.println("median is : " + median(mergedArray));
 
 	}
-	 public static double findMedianSortedArrays(int[] arr) {
-	        double median = arr.length /2;
-	        return median;
-	    }
 	
-
+	public static double median(int [] arr) {
+		double median;
+		if (arr.length % 2 == 0) {
+		    median = (double)(arr[arr.length/2] + arr[arr.length/2 -1])/2;
+		}else {
+		    median = arr[arr.length/2];
+		}
+		return median;
+		
+	}
 	
 	public static int []  mergeArray(int[] nums1, int[] nums2) {
 		int temp [] = new int [nums1.length + nums2.length];
-		int x = 0;
+		int x = 0;	
+		
 		for(int i = 0; i < nums1.length; i++) {
-				temp[x++] = nums1[i];
-				temp[x++] = nums2[i];		
+				temp[x] = nums1[i];
+				x++;
+		}
+		for(int i = 0; i < nums2.length;i++) {
+			temp[x++] = nums2[i];
+					
 		}
 		return temp;  
     }
