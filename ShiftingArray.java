@@ -10,7 +10,9 @@ public class ShiftingArray {
 		
 		int [] arr = {1,2,3,4,7};
 		print(arr);
-		shiftArrayLeft(arr,3);
+		shiftArrayRight(arr,2);
+		print(arr);
+	
 	}
 	
 	public static void shiftArrayRight(int [] arr ,int n) {
@@ -28,7 +30,7 @@ public class ShiftingArray {
 		for(int i = 0; i < n;i ++) {
 			for(int j = 0; j < n;j++) {
 				temp = arr[j];
-				arr[j] = arr[j+1];
+				arr[j] = arr[j+1]; 
 				arr[j+1]= temp;
 			}
 		}
