@@ -18,6 +18,8 @@ public class Fibannacci {
 		int num = input.nextInt();
 		System.out.println(fibonacciSeries(num));
 		
+		input.close();
+		
 	
 	}
 	
